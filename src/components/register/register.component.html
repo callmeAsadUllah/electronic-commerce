@@ -1,0 +1,23 @@
+<p>register works!</p>
+<h1>Seller Register</h1>
+
+<form>
+  <label for="name">
+    Full Name
+    <input [formControl]="registerControl" type="text" name="name" />
+  </label>
+  <label for="email">
+    Email
+    <input [formControl]="registerControl" type="email" name="email" />
+  </label>
+  <label for="password">
+    Password
+    <input [formControl]="registerControl" type="password" name="password" />
+  </label>
+  <label for="confirm-password">
+    Confirm Password
+    <input [formControl]="registerControl" type="password" name="confirm-password" />
+  </label>
+  <input [formControl]="registerControl" type="submit" value="submit" />
+  <input [formControl]="registerControl" type="reset" value="reset" />
+</form>
